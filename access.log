@@ -1,0 +1,83 @@
+
+> p5-playground@1.0.0 dev
+> npx live-server . --port=8080 --no-browser --ignore='access.log'
+
+[32mServing "." at http://127.0.0.1:8080[39m
+[36mReady for changes[39m
+[36mChange detected[39m index.html
+[36mChange detected[39m favicon.svg
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m index.html
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m index.html
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m index.html
+[36mChange detected[39m index.html
+[35mCSS change detected[39m style.css
+[35mCSS change detected[39m style.css
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m index.html
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m index.html
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[35mCSS change detected[39m style.css
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m sketch.js
+[36mChange detected[39m README.md
+[36mChange detected[39m index.html
+[36mChange detected[39m index.html
+[36mChange detected[39m README.md

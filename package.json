@@ -1,0 +1,11 @@
+{
+  "name": "p5-playground",
+  "version": "1.0.0",
+  "description": "A p5.js playground with hot reloading",
+  "scripts": {
+    "dev": "npx live-server . --port=8080 --no-browser --ignore='access.log'",
+    "serve": "python3 -m http.server 8080"
+  },
+  "devDependencies": {},
+  "keywords": ["p5js", "creative-coding", "playground"]
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js Playground</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="controls">
+        <h2>Log Sonification</h2>
+        <textarea id="logInput" placeholder="Paste your JSON server logs here...
+
+Example:
+{&quot;timestamp&quot;:&quot;2025-06-27 08:47:40.463&quot;,&quot;level&quot;:&quot;INFO&quot;,&quot;thread&quot;:&quot;grpc-default-executor-6&quot;,&quot;logger&quot;:&quot;com.example.grpc.GrpcLoggingRequest&quot;,&quot;message&quot;:&quot;[gRPC] Call received: method=com.example.grpc.ping.PingService/Ping, from=/192.168.1.100:44922&quot;,&quot;context&quot;:&quot;default&quot;}
+{&quot;timestamp&quot;:&quot;2025-06-27 08:47:41.123&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;thread&quot;:&quot;main&quot;,&quot;logger&quot;:&quot;com.example.database&quot;,&quot;message&quot;:&quot;Connection timeout after 5000ms&quot;,&quot;context&quot;:&quot;db&quot;}
+{&quot;timestamp&quot;:&quot;2025-06-27 08:47:42.789&quot;,&quot;level&quot;:&quot;WARN&quot;,&quot;thread&quot;:&quot;auth-thread&quot;,&quot;logger&quot;:&quot;com.example.auth&quot;,&quot;message&quot;:&quot;Invalid token attempt from /192.168.1.100:44922&quot;,&quot;context&quot;:&quot;auth&quot;}"></textarea>
+        
+        <h3>CPU Metrics</h3>
+        <textarea id="metricsInput" placeholder="Paste Prometheus CPU JSON here...
+
+Example: {&quot;status&quot;:&quot;success&quot;,&quot;data&quot;:{&quot;resultType&quot;:&quot;matrix&quot;,&quot;result&quot;:[{&quot;metric&quot;:{&quot;container&quot;:&quot;app-service&quot;,&quot;pod&quot;:&quot;app-service-0&quot;},&quot;values&quot;:[[1751234003,&quot;2.44&quot;],[1751234018,&quot;2.48&quot;]]}]}}"></textarea>
+        
+        <h3>Timezone Offset</h3>
+        <input type="number" id="timezoneOffset" placeholder="Hours" value="2" min="-12" max="12" step="0.5" style="width: 80px;">
+        <label for="timezoneOffset" style="margin-left: 8px; color: #aaa; font-size: 12px;">Add hours to log timestamps (e.g., 2 for logs 2h behind UTC)</label>
+        <div id="button-container">
+            <button id="playBtn">▶ Play Logs</button>
+            <button id="stopBtn">⏹ Stop</button>
+            <button id="clearBtn">Clear</button>
+        </div>
+        <div id="info">
+            <small>Maps: ERROR→low pitch, WARN→mid pitch, INFO→high pitch | Message length→amplitude | Message type→waveform (timeout→sawtooth, auth→square, grpc→triangle, db→sine) | Complexity→envelope duration</small>
+        </div>
+    </div>
+    <div id="sketch-container"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+</body>
+</html>

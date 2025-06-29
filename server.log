@@ -1,0 +1,7 @@
+
+> p5-playground@1.0.0 dev
+> npx live-server . --port=8080 --no-browser --ignore='*.log'
+
+[32mServing "." at http://127.0.0.1:8080[39m
+[36mReady for changes[39m
+[36mChange detected[39m package.json
