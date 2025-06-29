@@ -7,5 +7,20 @@
     "serve": "python3 -m http.server 8080"
   },
   "devDependencies": {},
-  "keywords": ["p5js", "creative-coding", "playground"]
+  "keywords": [
+    "sonification",
+    "data-visualization", 
+    "audio",
+    "p5js",
+    "monitoring",
+    "logs",
+    "metrics",
+    "javascript",
+    "creative-coding",
+    "web-audio",
+    "devops",
+    "prometheus",
+    "real-time",
+    "visualization"
+  ]
 }

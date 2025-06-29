@@ -89,3 +89,38 @@ A real-time audio visualization tool that transforms server logs and system metr
 The project uses hot reloading for rapid development. Changes to any file automatically refresh the browser. The access log is ignored to prevent infinite reload loops.
 
 Built for real-time monitoring of distributed systems through immersive audio feedback.
+
+## Live Demo
+
+🎵 **[Try it online](https://gurghet.github.io/log-sonification-playground/)** - Paste the example data and click Play!
+
+## Use Cases
+
+- **DevOps Monitoring** - Turn server logs into ambient soundscapes for background monitoring
+- **Security Operations** - Audio alerts for suspicious patterns in authentication logs  
+- **Performance Analysis** - Correlate CPU spikes with log events through synchronized audio
+- **Data Sonification Research** - Explore acoustic representations of temporal data
+- **Creative Coding** - Generate music from system metrics and application events
+- **Accessibility** - Audio feedback for visually impaired system administrators
+
+## Related Projects
+
+If you're interested in log sonification, you might also like:
+- [Sonification Handbook](https://sonification.de/handbook/) - Academic resource on data sonification
+- [tone.js](https://tonejs.github.io/) - Web Audio framework for interactive music
+- [D3.js Audio](https://observablehq.com/@d3/audio) - Data-driven audio visualizations
+- [WebPd](https://github.com/sebpiq/WebPd) - Pure Data in the browser for audio synthesis
+
+## Contributing
+
+Contributions welcome! Areas for improvement:
+- Additional audio synthesis techniques (FM, granular synthesis)
+- Machine learning for pattern recognition in logs  
+- WebRTC streaming for collaborative monitoring sessions
+- Integration with popular monitoring platforms (Grafana, Datadog)
+- Mobile-responsive touch controls
+- Additional metric types (memory, network, disk I/O)
+
+## License
+
+MIT License - Feel free to use in your own projects!
