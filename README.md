@@ -92,7 +92,9 @@ Built for real-time monitoring of distributed systems through immersive audio fe
 
 ## Live Demo
 
-🎵 **[Try it online](https://gurghet.github.io/log-sonification-playground/)** - Paste the example data and click Play!
+🎵 **[Try it online](http://zenasoftware.gurghet.com/log-sonification-playground/)** - Paste the example data and click Play!
+
+> Note: GitHub Pages is building the site. It may take a few minutes to become available.
 
 ## Use Cases
 
