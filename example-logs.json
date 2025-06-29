@@ -1,0 +1,7 @@
+{"timestamp":"2024-12-01 14:30:15.123","level":"INFO","thread":"http-nio-8080-exec-1","logger":"com.example.api.RequestController","message":"GET /api/users - 200 OK (45ms)","context":"web"}
+{"timestamp":"2024-12-01 14:30:15.567","level":"WARN","thread":"auth-service-2","logger":"com.example.auth.TokenValidator","message":"Token validation failed for user: expired JWT","context":"auth"}
+{"timestamp":"2024-12-01 14:30:15.890","level":"ERROR","thread":"db-pool-3","logger":"com.example.database.ConnectionPool","message":"Database connection timeout after 5000ms","context":"database"}
+{"timestamp":"2024-12-01 14:30:16.200","level":"INFO","thread":"grpc-executor-5","logger":"com.example.grpc.ServiceHandler","message":"[gRPC] Call processed: UserService/GetProfile - SUCCESS","context":"grpc"}
+{"timestamp":"2024-12-01 14:30:16.500","level":"DEBUG","thread":"background-1","logger":"com.example.cache.RedisClient","message":"Cache hit for key: user:12345:profile","context":"cache"}
+{"timestamp":"2024-12-01 14:30:16.800","level":"ERROR","thread":"network-handler","logger":"com.example.network.TcpServer","message":"Network timeout: client disconnected unexpectedly","context":"network"}
+{"timestamp":"2024-12-01 14:30:17.100","level":"INFO","thread":"metrics-collector","logger":"com.example.monitoring.MetricsService","message":"Health check completed - all services healthy","context":"monitoring"}

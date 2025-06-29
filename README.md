@@ -2,6 +2,8 @@
 
 A real-time audio visualization tool that transforms server logs and system metrics into immersive soundscapes using p5.js.
 
+![Log Sonification in Action](screenshot.png)
+
 ## Features
 
 ### 🎵 Log Sonification
