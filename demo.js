@@ -26,6 +26,9 @@ script.onload = function() {
         clearBtn.html('Clear');
     }
     
+    // Override the global clearLogs function
+    window.clearLogs = clearLogs;
+    
     // Auto-start demo feature
     let demoStarted = false;
     
