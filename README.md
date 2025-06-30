@@ -94,9 +94,7 @@ Built for real-time monitoring of distributed systems through immersive audio fe
 
 🎵 **[Try the demo](https://gurghet.github.io/log-sonification-playground/demo.html)** - Pre-filled with examples, just click Play!
 
-📝 **[Open full editor](https://gurghet.github.io/log-sonification-playground/)** - Paste your own data
-
-> 💡 Copy the contents of `example-logs.json` and `example-cpu.json` for instant demo
+📝 **[Open full editor](https://gurghet.github.io/log-sonification-playground/)** - For your own log data
 
 ## Quick Local Setup
 
@@ -106,6 +104,8 @@ cd log-sonification-playground
 npm run dev
 # Open http://localhost:8080
 ```
+
+> 💡 The `example-logs.json` and `example-cpu.json` files contain sample data for testing
 
 ## Use Cases
 
