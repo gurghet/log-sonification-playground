@@ -90,17 +90,20 @@ The project uses hot reloading for rapid development. Changes to any file automa
 
 Built for real-time monitoring of distributed systems through immersive audio feedback.
 
-## Try It Now
+## Live Demo
 
-🎵 **Quick Start**: Clone and run locally in 30 seconds:
+🎵 **[Try it online](https://gurghet.github.io/log-sonification-playground/)** - Paste the example data and click Play!
+
+> 💡 Copy the contents of `example-logs.json` and `example-cpu.json` for instant demo
+
+## Quick Local Setup
+
 ```bash
 git clone https://github.com/gurghet/log-sonification-playground.git
 cd log-sonification-playground
 npm run dev
-# Open http://localhost:8080 and paste the example data!
+# Open http://localhost:8080
 ```
-
-> 💡 Copy the contents of `example-logs.json` and `example-cpu.json` for instant demo
 
 ## Use Cases
 
