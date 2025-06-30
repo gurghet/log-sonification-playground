@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Sonification Demo</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="controls">
+        <h2>🎵 Log Sonification Demo</h2>
+        <p style="color: #aaa; margin-bottom: 20px;">
+            <strong>Ready to play!</strong> Example data is pre-loaded below. Just click "Play Logs" to hear your data come alive through sound. 
+            <br><small>Different log levels = different frequencies | Message types = different waveforms | CPU usage = background white noise</small>
+        </p>
+        
+        <textarea id="logInput" readonly>{"timestamp":"2024-12-01 14:30:15.123","level":"INFO","thread":"http-nio-8080-exec-1","logger":"com.example.api.RequestController","message":"GET /api/users - 200 OK (45ms)","context":"web"}
+{"timestamp":"2024-12-01 14:30:15.567","level":"WARN","thread":"auth-service-2","logger":"com.example.auth.TokenValidator","message":"Token validation failed for user: expired JWT","context":"auth"}
+{"timestamp":"2024-12-01 14:30:15.890","level":"ERROR","thread":"db-pool-3","logger":"com.example.database.ConnectionPool","message":"Database connection timeout after 5000ms","context":"database"}
+{"timestamp":"2024-12-01 14:30:16.200","level":"INFO","thread":"grpc-executor-5","logger":"com.example.grpc.ServiceHandler","message":"[gRPC] Call processed: UserService/GetProfile - SUCCESS","context":"grpc"}
+{"timestamp":"2024-12-01 14:30:16.500","level":"DEBUG","thread":"background-1","logger":"com.example.cache.RedisClient","message":"Cache hit for key: user:12345:profile","context":"cache"}
+{"timestamp":"2024-12-01 14:30:16.800","level":"ERROR","thread":"network-handler","logger":"com.example.network.TcpServer","message":"Network timeout: client disconnected unexpectedly","context":"network"}
+{"timestamp":"2024-12-01 14:30:17.100","level":"INFO","thread":"metrics-collector","logger":"com.example.monitoring.MetricsService","message":"Health check completed - all services healthy","context":"monitoring"}</textarea>
+        
+        <h3>CPU Metrics</h3>
+        <textarea id="metricsInput" readonly>{"status":"success","data":{"resultType":"matrix","result":[{"metric":{"container":"web-service","pod":"web-service-0","instance":"10.0.1.15:8080"},"values":[[1733068215,"1.2"],[1733068217,"3.8"],[1733068219,"0.9"],[1733068221,"5.2"],[1733068223,"2.1"],[1733068225,"7.3"],[1733068227,"1.8"],[1733068229,"4.5"],[1733068231,"0.7"],[1733068233,"6.1"]]},{"metric":{"container":"api-service","pod":"api-service-0","instance":"10.0.1.16:8080"},"values":[[1733068215,"2.1"],[1733068217,"0.8"],[1733068219,"4.2"],[1733068221,"1.5"],[1733068223,"5.9"],[1733068225,"2.7"],[1733068227,"6.8"],[1733068229,"1.3"],[1733068231,"3.6"],[1733068233,"0.9"]]},{"metric":{"container":"database","pod":"database-0","instance":"10.0.1.17:5432"},"values":[[1733068215,"3.5"],[1733068217,"1.1"],[1733068219,"6.7"],[1733068221,"2.8"],[1733068223,"0.6"],[1733068225,"4.9"],[1733068227,"3.2"],[1733068229,"7.1"],[1733068231,"1.7"],[1733068233,"5.4"]]}]}}</textarea>
+        
+        <h3>Timezone Offset</h3>
+        <input type="number" id="timezoneOffset" placeholder="Hours" value="2" min="-12" max="12" step="0.5" style="width: 80px;">
+        <label for="timezoneOffset" style="margin-left: 8px; color: #aaa; font-size: 12px;">Add hours to log timestamps (e.g., 2 for logs 2h behind UTC)</label>
+        
+        <div id="button-container">
+            <button id="playBtn">▶ Play Demo</button>
+            <button id="stopBtn">⏹ Stop</button>
+            <button id="clearBtn">Clear & Edit</button>
+            <a href="." style="margin-left: 15px; color: #14a085; text-decoration: none;">📝 Open Full Editor</a>
+        </div>
+        
+        <div id="demo-info" style="background: #2a2a2a; padding: 15px; border-radius: 6px; margin: 15px 0; border-left: 4px solid #14a085;">
+            <h4 style="margin: 0 0 10px 0; color: #14a085;">🎧 What You'll Hear:</h4>
+            <ul style="margin: 0; color: #ccc; font-size: 12px;">
+                <li><strong>ERROR logs</strong> → Low, ominous frequencies (200Hz)</li>
+                <li><strong>WARN logs</strong> → Mid-range attention-grabbing tones (400Hz)</li>
+                <li><strong>INFO logs</strong> → Higher, pleasant frequencies (600Hz)</li>
+                <li><strong>DEBUG logs</strong> → Highest, subtle background tones (800Hz)</li>
+                <li><strong>Network timeouts</strong> → Harsh sawtooth waves</li>
+                <li><strong>Auth issues</strong> → Sharp square waves</li>
+                <li><strong>API calls</strong> → Smooth triangle waves</li>
+                <li><strong>Database ops</strong> → Pure sine waves</li>
+                <li><strong>CPU background</strong> → White noise that follows CPU usage</li>
+            </ul>
+        </div>
+        
+        <div id="info">
+            <small>🎵 Experience how your server's story sounds when transformed into an acoustic landscape</small>
+        </div>
+    </div>
+    <div id="sketch-container"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
+    <script src="demo.js"></script>
+</body>
+</html>

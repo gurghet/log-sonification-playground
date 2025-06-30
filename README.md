@@ -92,7 +92,9 @@ Built for real-time monitoring of distributed systems through immersive audio fe
 
 ## Live Demo
 
-🎵 **[Try it online](https://gurghet.github.io/log-sonification-playground/)** - Paste the example data and click Play!
+🎵 **[Try the demo](https://gurghet.github.io/log-sonification-playground/demo.html)** - Pre-filled with examples, just click Play!
+
+📝 **[Open full editor](https://gurghet.github.io/log-sonification-playground/)** - Paste your own data
 
 > 💡 Copy the contents of `example-logs.json` and `example-cpu.json` for instant demo
 
