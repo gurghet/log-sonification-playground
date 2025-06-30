@@ -2,6 +2,12 @@
 
 A real-time audio visualization tool that transforms server logs and system metrics into immersive soundscapes using p5.js.
 
+## Live Demo
+
+🎵 **[Try the demo](https://gurghet.github.io/log-sonification-playground/demo.html)** - Pre-filled with examples, just click Play!
+
+📝 **[Open full editor](https://gurghet.github.io/log-sonification-playground/)** - For your own log data
+
 ![Log Sonification in Action](screenshot.png)
 
 ## Features
@@ -89,12 +95,6 @@ A real-time audio visualization tool that transforms server logs and system metr
 The project uses hot reloading for rapid development. Changes to any file automatically refresh the browser. The access log is ignored to prevent infinite reload loops.
 
 Built for real-time monitoring of distributed systems through immersive audio feedback.
-
-## Live Demo
-
-🎵 **[Try the demo](https://gurghet.github.io/log-sonification-playground/demo.html)** - Pre-filled with examples, just click Play!
-
-📝 **[Open full editor](https://gurghet.github.io/log-sonification-playground/)** - For your own log data
 
 ## Quick Local Setup
 
